@@ -1,5 +1,4 @@
 # Maintainer: Viktor Stanchev <alpine@viktorstanchev.com>
-_dovecotver=2.2.20-r1
 pkgname=pigeonhole
 pkgver=0.4.12
 pkgrel=1
@@ -7,8 +6,8 @@ pkgdesc="Sieve implementation for Dovecot"
 url="http://pigeonhole.dovecot.org/"
 arch="all"
 license="LGPL"
-depends="dovecot=${_dovecotver}"
-depends_dev="dovecot-dev=${_dovecotver}"
+depends="dovecot"
+depends_dev="dovecot-dev"
 makedepends="${depends_dev} autoconf libtool make openssl-dev bash"
 subpackages="$pkgname-dev $pkgname-doc"
 source="http://pigeonhole.dovecot.org/releases/2.2/dovecot-2.2-pigeonhole-${pkgver}.tar.gz"
