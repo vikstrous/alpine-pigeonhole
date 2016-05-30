@@ -10,7 +10,6 @@ license="LGPL"
 depends="dovecot=${_dovecotver}"
 depends_dev="dovecot-dev=${_dovecotver}"
 makedepends="${depends_dev} autoconf libtool make openssl-dev bash"
-#install=""
 subpackages="$pkgname-dev $pkgname-doc"
 source="http://pigeonhole.dovecot.org/releases/2.2/dovecot-2.2-pigeonhole-${pkgver}.tar.gz"
 
